@@ -3,224 +3,1134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games - NBA Project</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>NBA Wiki</title>
+    <link rel="icon" type="image/png" href="dataImage/basketball-4264543_1920.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
     <link rel="stylesheet" href="gamestyle.css">
 </head>
 <body>
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">NBA Project</a>
+            <a class="navbar-brand" href="welcome.html" style="font-family: 'Georgia', serif;">
+                NBA Wiki
+                <img src="dataImage/basketball-4264543_1920.png" alt="NBA Logo" style="height: 40px; width: auto;" class="d-inline-block align-text-top ms-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" role="button">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="games.html">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="teams.html">Teams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="players.html">Players</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="nav navbar-nav">
-                <li>
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#index.html">Home <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="index.html#start">Start</a></li>
-                        <li><a href="index.html#history">History</a></li>
-                        <li><a href="index.html#legends">Legends</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown active"><a href="games.html">Games</a></li>
-                <li><a href="teams.html">Teams</a></li>
-                <li><a href="players.html">Players</a></li>
-            </ul>
         </div>
     </nav>
-    
-    <div id="videoCarousel" class="carousel slide" data-ride="carousel">
-        
-        <ol class="carousel-indicators">
-            <li data-target="#videoCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#videoCarousel" data-slide-to="1"></li>
-            <li data-target="#videoCarousel" data-slide-to="2"></li>
-        </ol>
-
-        
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <video style="width: 100%;" autoplay loop muted>
-                    <source src="videos/1764920513478848.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="carousel-caption">
-                </div>
-            </div>
-
-            <div class="item">
-                <video style="width: 100%;" autoplay loop muted>
-                    <source src="videos/1764920630353149.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="carousel-caption">
-                </div>
-            </div>
-
-            <div class="item">
-                <video style="width: 100%;" autoplay loop muted>
-                    <source src="videos/1764920715972309.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="carousel-caption">
-                </div>
-            </div>
-        </div>
-
-        <a class="left carousel-control" href="#videoCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#videoCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-    <div class="container text-center"  id="">
-        
-        <h1>Memorable NBA games</h1>
-    </div>
-    <div class="container text-center" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
-        <img src="images/bostonGreen.svg" class="icon-img">
-        <img src="images/canadian.svg" class="icon-img">
-        <img src="images/chikagobulls.svg" class="icon-img">
-        <img src="images/covalent.svg" class="icon-img">
-        <img src="images/golden-state.svg" class="icon-img">
-        <img src="images/losAngles.svg" class="icon-img">
-        <img src="images/miamiHit.svg" class="icon-img">
-        <img src="images/philadelphia76Er.svg" class="icon-img">
-        <img src="images/spurs.svg" class="icon-img">
-        <img src="images/torontoRaptors.svg" class="icon-img">
-        <img src="images/utaJazz.svg" class="icon-img">
-    </div>
-    <hr class="my-5 w-50 mx-auto" style="border-top: 5px solid rgb(255, 255, 255);">
-    <div class="container-fluid bg-dark text-white py-5">
+    <div class="container-fluid">
         <div class="row">
-            
-            <div class="col-md-6 px-4 mb-6">
-                <div class="text-center">
-                    <img src="images/chikagobulls.svg" class="icon-img" style="width: 100px; height: 100px;">
-                    <img src="images/utaJazz.svg" class="icon-img" style="width: 100px; height: 100px;">
+            <div class="col-sm-3 sidenav border-right">
+                <h3 class="mt-3">Season 2025/26</h3>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle w-100" data-bs-toggle="dropdown">
+                        Jump to Month
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><h6 class="dropdown-header">Q1 2025/26</h6></li>
+                        <li><a class="dropdown-item" href="#january">January</a></li>
+                        <li><a class="dropdown-item" href="#february">February</a></li>
+                        <li><a class="dropdown-item" href="#march">March</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h6 class="dropdown-header">Q2 2025/26</h6></li>
+                        <li><a class="dropdown-item" href="#april">April</a></li>
+                        <li><a class="dropdown-item" href="#may">May</a></li>
+                        <li><a class="dropdown-item" href="#june">June</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h6 class="dropdown-header">Q3 2025/26</h6></li>
+                        <li><a class="dropdown-item" href="#july">July</a></li>
+                        <li><a class="dropdown-item" href="#august">August</a></li>
+                        <li><a class="dropdown-item" href="#september">Septermber</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h6 class="dropdown-header">Q4 2025/26</h6></li>
+                        <li><a class="dropdown-item" href="#october">October</a></li>
+                        <li><a class="dropdown-item" href="#november">November</a></li>
+                        <li><a class="dropdown-item" href="#december">December</a></li>
+                    </ul>
                 </div>
-                <h2 class="text-center mb-3">THE FLU GAME (1997)</h2>
-                <h3 class="text-center mb-3">June 11, 1997</h3>
-                <hr class="my-5 w-50 mx-auto" style="border-top: 5px solid rgb(255, 255, 255);">
-                <h2 class="text-center mb-3">NBA Finals Game 5</h2>
-                <h2 class="text-center mb-3">Chicago Bulls vs Utah Jazz</h2>
-                <h2 class="text-center mb-3">90-88</h2>
-                <hr class="my-5 w-50 mx-auto" style="border-top: 5px solid rgb(255, 255, 255);">
-                <h3>Michael Jordan woke up violently ill, barely able to stand. Doctors advised him not to play. He played anyway — scoring 38 points including the go-ahead three-pointer with 25 seconds left. After the final buzzer, Jordan collapsed into Scottie Pippen's arms. This game defined what "Mamba Mentality" means before the term even existed.
-                </h3>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="memorygames.html">Memorable NBA games</a>
+                    </li>
+                </ul>
+
+                <hr>
+
+                <div class="card mt-3" style="background-color: #333; border: none;">
+                    <div class="card-body">
+                        <p class="text-light"><strong>Did you know?</strong><br>The 3-point line was introduced in 1979.</p>
+                    </div>
+                </div>
+
+                <div class="card mt-3" style="background-color: #004ec3; border: none;">
+                    <div class="card-body">
+                        <p class="text-light"><strong>NBA All-Star 2026:</strong><br><strong><a>VOTE NOW</a></strong></p>
+                    </div>
+                </div>
+
+                <div class="card mt-3" style="background-color: #333; border: none;">
+                    <div class="card-body">
+                        <p class="text-light"><strong>NBA 2025-26</strong><br>Regular Season Standings</p>
+                    </div>
+                </div>
+
+                <div class="card mt-3" style="background-color: #333; border: none;">
+                    <div class="card-body">
+                        <p class="text-light"><strong>Key dates for 2025-26 NBA season</strong><br>Key dates, important events and season information for 2025-26 season.</p>
+                    </div>
+                </div>
             </div>
-            
-            <div class="col-md-6 px-4 mb-6">
-                <div class="text-center">
-                    <img src="images/chikagobulls.svg" class="icon-img" style="width: 100px; height: 100px;">
-                    <img src="images/utaJazz.svg" class="icon-img" style="width: 100px; height: 100px;">
+            <div class="col-sm-9" style="padding: 20px;">
+                <h3 class="text-center mt-1"><small>NBA GAMES 2025/26</small></h3>
+                <hr>
+                <div id="january" class="mb-4">
+                    <button class="btn btn-success w-100 text-start fs-6 fw-bold" data-bs-toggle="collapse" data-bs-target="#january-games">
+                        <i class="bi bi-calendar3"></i> January 2026
+                        <i class="bi bi-caret-down-fill float-end"></i>
+                    </button>
+                    <div id="january-games" class="collapse show">
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Chicago Bulls vs Wizards</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> Jan 1, 2026, 20:00 
+                                </small>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/chikagobulls.svg" class="rounded" height="65" width="65" alt="Bulls">
+                                        <p class="fs-5 fw-bold text-warning">Chicago Bulls</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/wizards.svg" class="rounded" height="65" width="65" alt="Wizards">
+                                        <p class="fs-5 fw-bold text-warning">Wizards</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Jazz vs Knicks</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> Jan 8, 2026, 19:30
+                                </small>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/utaJazz.svg" class="rounded" height="65" width="65" alt="Jazz">
+                                        <p class="fs-5 fw-bold text-warning">Jazz</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/knicks.svg" class="rounded" height="65" width="65" alt="Knicks">
+                                        <p class="fs-5 fw-bold text-warning">Knicks</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Hawks vs Nuggets</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> Jan 15, 2026, 19:30
+                                </small>
+                                
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/hawks.svg" class="rounded" height="65" width="65" alt="Hawks">
+                                        <p class="fs-5 fw-bold text-warning">Hawks</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/nuggets.svg" class="rounded" height="65" width="65" alt="Nuggets">
+                                        <p class="fs-5 fw-bold text-warning">Nuggets</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h2 class="text-center mb-3">THE LAST SHOT (1998)</h2>
-                <h3 class="text-center mb-3">June 14, 1998</h3>
-                <hr class="my-5 w-50 mx-auto" style="border-top: 5px solid rgb(255, 255, 255);">
-                <h2 class="text-center mb-3">NBA Finals Game 6</h2>
-                <h2 class="text-center mb-3">Chicago Bulls vs Utah Jazz</h2>
-                <h2 class="text-center mb-3">87-86</h2>
-                <hr class="my-5 w-50 mx-auto" style="border-top: 5px solid rgb(255, 255, 255);">
-                <h3>With 5.2 seconds left and the Bulls trailing by one, Jordan stole the ball from Karl Malone, dribbled up court, and hit the most iconic shot in NBA history over Bryon Russell. His sixth championship. His sixth Finals MVP. The perfect ending to a perfect dynasty.
-                </h3>
+                <!-- FEBRUARY -->
+                <div id="february" class="mb-4">
+                    <button class="btn btn-success w-100 text-start fs-6 fw-bold" data-bs-toggle="collapse" data-bs-target="#february-games">
+                        <i class="bi bi-calendar3"></i> February 2026
+                        <i class="bi bi-caret-down-fill float-end"></i>
+                    </button>
+                    <div id="february-games" class="collapse">
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Hawks vs Pacers</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> Feb 8, 2026, 19:30
+                                </small>
+                                
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/hawks.svg" class="rounded" height="65" width="65" alt="Hawks">
+                                        <p class="fs-5 fw-bold text-warning">Hawks</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/parcers.svg" class="rounded" height="65" width="65" alt="Pacers">
+                                        <p class="fs-5 fw-bold text-warning">Pacers</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Bucks vs Hornets</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> Feb 8, 2026, 19:30
+                                </small>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/bucks.svg" class="rounded" height="65" width="65" alt="Bucks">
+                                        <p class="fs-5 fw-bold text-warning">Bucks</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/hornets.svg" class="rounded" height="65" width="65" alt="Hornets">
+                                        <p class="fs-5 fw-bold text-warning">Hornets</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Pelicans vs Thunder</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> Feb 11, 2026, 19:30
+                                </small>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/pelicans.svg" class="rounded" height="65" width="65" alt="Pelicans">
+                                        <p class="fs-5 fw-bold text-warning">Pelicans</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/thunder.svg" class="rounded" height="65" width="65" alt="Thunder">
+                                        <p class="fs-5 fw-bold text-warning">Thunder</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MARCH -->
+                <div id="march" class="mb-4">
+                    <button class="btn btn-success w-100 text-start fs-6 fw-bold" data-bs-toggle="collapse" data-bs-target="#march-games">
+                        <i class="bi bi-calendar3"></i> March 2026
+                        <i class="bi bi-caret-down-fill float-end"></i>
+                    </button>
+                    <div id="march-games" class="collapse">
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Nets vs Pistons</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> Mar 1, 2026, 19:30
+                                </small>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/nets.svg" class="rounded" height="65" width="65" alt="Nets">
+                                        <p class="fs-5 fw-bold text-warning">Nets</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/pistons.svg" class="rounded" height="65" width="65" alt="Pistons">
+                                        <p class="fs-5 fw-bold text-warning">Pistons</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Mavericks vs Rockets</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> Mar 14, 2026, 19:30
+                                </small>
+                                
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/mavericks.svg" class="rounded" height="65" width="65" alt="Mavericks">
+                                        <p class="fs-5 fw-bold text-warning">Mavericks</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/rockets.svg" class="rounded" height="65" width="65" alt="Rockets">
+                                        <p class="fs-5 fw-bold text-warning">Rockets</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Cavaliers vs Clippers</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> Mar 18, 2026, 19:30
+                                </small>
+                                
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/cavaliers.svg" class="rounded" height="65" width="65" alt="Cavaliers">
+                                        <p class="fs-5 fw-bold text-warning">Cavaliers</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/clippers.svg" class="rounded" height="65" width="65" alt="Clippers">
+                                        <p class="fs-5 fw-bold text-warning">Clippers</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- APRIL -->
+                <div id="april" class="mb-4">
+                    <button class="btn btn-success w-100 text-start fs-6 fw-bold" data-bs-toggle="collapse" data-bs-target="#april-games">
+                        <i class="bi bi-calendar3"></i> April 2026
+                        <i class="bi bi-caret-down-fill float-end"></i>
+                    </button>
+                    <div id="april-games" class="collapse">
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>76ers vs Knicks</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> Apr 1, 2026, 19:30
+                                </small>
+                                
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/76ers.svg" class="rounded" height="65" width="65" alt="76ers">
+                                        <p class="fs-5 fw-bold text-warning">76ers</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/knicks.svg" class="rounded" height="65" width="65" alt="Knicks">
+                                        <p class="fs-5 fw-bold text-warning">Knicks</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Hawks vs Magic</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> Apr 15, 2026, 19:30
+                                </small>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/hawks.svg" class="rounded" height="65" width="65" alt="Hawks">
+                                        <p class="fs-5 fw-bold text-warning">Hawks</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/Magic.svg" class="rounded" height="65" width="65" alt="Magic">
+                                        <p class="fs-5 fw-bold text-warning">Magic</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Magic vs Celtics</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> Apr 23, 2026, 19:30
+                                </small>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/Magic.svg" class="rounded" height="65" width="65" alt="Magic">
+                                        <p class="fs-5 fw-bold text-warning">Magic</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/celtics.svg" class="rounded" height="65" width="65" alt="Celtics">
+                                        <p class="fs-5 fw-bold text-warning">Celtics</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MAY -->
+                <div id="may" class="mb-4">
+                    <button class="btn btn-success w-100 text-start fs-6 fw-bold" data-bs-toggle="collapse" data-bs-target="#may-games">
+                        <i class="bi bi-calendar3"></i> May 2026
+                        <i class="bi bi-caret-down-fill float-end"></i>
+                    </button>
+                    <div id="may-games" class="collapse">
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Knicks vs Pistons</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> May 1, 2026, 19:30
+                                </small>
+                                
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/knicks.svg" class="rounded" height="65" width="65" alt="Knicks">
+                                        <p class="fs-5 fw-bold text-warning">Knicks</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/pistons.svg" class="rounded" height="65" width="65" alt="Pistons">
+                                        <p class="fs-5 fw-bold text-warning">Pistons</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Nuggets vs Thunder</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> May 7, 2026, 19:30
+                                </small>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/nuggets.svg" class="rounded" height="65" width="65" alt="Nuggets">
+                                        <p class="fs-5 fw-bold text-warning">Nuggets</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/thunder.svg" class="rounded" height="65" width="65" alt="Thunder">
+                                        <p class="fs-5 fw-bold text-warning">Thunder</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Timberwolves vs Thunder</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> May 22, 2026, 19:30
+                                </small>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/timberwolves.svg" class="rounded" height="65" width="65" alt="Timberwolves">
+                                        <p class="fs-5 fw-bold text-warning">Timberwolves</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/thunder.svg" class="rounded" height="65" width="65" alt="Thunder">
+                                        <p class="fs-5 fw-bold text-warning">Thunder</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- JUNE -->
+                <div id="june" class="mb-4">
+                    <button class="btn btn-success w-100 text-start fs-6 fw-bold" data-bs-toggle="collapse" data-bs-target="#june-games">
+                        <i class="bi bi-calendar3"></i> June 2026
+                        <i class="bi bi-caret-down-fill float-end"></i>
+                    </button>
+                    <div id="june-games" class="collapse">
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Pacers vs Thunder</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> June 5, 2026, 19:30
+                                </small>
+                                
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/parcers.svg" class="rounded" height="65" width="65" alt="Pacers">
+                                        <p class="fs-5 fw-bold text-warning">Pacers</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/thunder.svg" class="rounded" height="65" width="65" alt="Thunder">
+                                        <p class="fs-5 fw-bold text-warning">Thunder</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Thunder vs Pacers</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> June 19, 2026, 19:30
+                                </small>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/thunder.svg" class="rounded" height="65" width="65" alt="Thunder">
+                                        <p class="fs-5 fw-bold text-warning">Thunder</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/parcers.svg" class="rounded" height="65" width="65" alt="Pacers">
+                                        <p class="fs-5 fw-bold text-warning">Pacers</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- JULY -->
+                <div id="july" class="mb-4">
+                    <button class="btn btn-success w-100 text-start fs-6 fw-bold" data-bs-toggle="collapse" data-bs-target="#july-games">
+                        <i class="bi bi-calendar3"></i> July 2026
+                        <i class="bi bi-caret-down-fill float-end"></i>
+                    </button>
+                    <div id="july-games" class="collapse">
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Spurs vs Heat</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> July 5, 2026, 19:30
+                                </small>
+                                
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/spurs.svg" class="rounded" height="65" width="65" alt="Spurs">
+                                        <p class="fs-5 fw-bold text-warning">Spurs</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/miamiHit.svg" class="rounded" height="65" width="65" alt="Heat">
+                                        <p class="fs-5 fw-bold text-warning">Heat</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Pelicans vs Timberwolves</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> July 10, 2026, 19:30
+                                </small>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/pelicans.svg" class="rounded" height="65" width="65" alt="Pelicans">
+                                        <p class="fs-5 fw-bold text-warning">Pelicans</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/timberwolves.svg" class="rounded" height="65" width="65" alt="Timberwolves">
+                                        <p class="fs-5 fw-bold text-warning">Timberwolves</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- AUGUST -->
+                <div id="august" class="mb-4">
+                    <button class="btn btn-success w-100 text-start fs-6 fw-bold" data-bs-toggle="collapse" data-bs-target="#august-games">
+                        <i class="bi bi-calendar3"></i> August 2026
+                        <i class="bi bi-caret-down-fill float-end"></i>
+                    </button>
+                    <div id="august-games" class="collapse">
+                        <p style="padding: 20px; color: #999;">
+                            <i class="bi bi-clock"></i> Off-season — Free agency period
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- SEPTEMBER -->
+                <div id="september" class="mb-4">
+                    <button class="btn btn-success w-100 text-start fs-6 fw-bold" data-bs-toggle="collapse" data-bs-target="#september-games">
+                        <i class="bi bi-calendar3"></i> September 2026
+                        <i class="bi bi-caret-down-fill float-end"></i>
+                    </button>
+                    <div id="september-games" class="collapse">
+                        <p style="padding: 20px; color: #999;">
+                            <i class="bi bi-clock"></i> Off-season — Free agency period
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- OCTOBER -->
+                <div id="october" class="mb-4">
+                    <button class="btn btn-success w-100 text-start fs-6 fw-bold" data-bs-toggle="collapse" data-bs-target="#october-games">
+                        <i class="bi bi-calendar3"></i> October 2026
+                        <i class="bi bi-caret-down-fill float-end"></i>
+                    </button>
+                    <div id="october-games" class="collapse">
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>76ers vs Knicks</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> Oct 1, 2026, 19:30
+                                </small>
+                                
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/76ers.svg" class="rounded" height="65" width="65" alt="76ers">
+                                        <p class="fs-5 fw-bold text-warning">76ers</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/knicks.svg" class="rounded" height="65" width="65" alt="Knicks">
+                                        <p class="fs-5 fw-bold text-warning">Knicks</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Thunder vs Pacers</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> Oct 11, 2026, 19:30
+                                </small>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/thunder.svg" class="rounded" height="65" width="65" alt="Thunder">
+                                        <p class="fs-5 fw-bold text-warning">Thunder</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/pacers.svg" class="rounded" height="65" width="65" alt="Pacers">
+                                        <p class="fs-5 fw-bold text-warning">Pacers</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- NOVEMBER -->
+                <div id="november" class="mb-4">
+                    <button class="btn btn-success w-100 text-start fs-6 fw-bold" data-bs-toggle="collapse" data-bs-target="#november-games">
+                        <i class="bi bi-calendar3"></i> November 2026
+                        <i class="bi bi-caret-down-fill float-end"></i>
+                    </button>
+                    <div id="november-games" class="collapse">
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Timberwolves vs Nets</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> Nov 3, 2026, 19:30
+                                </small>
+                                
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/timberwolves.svg" class="rounded" height="65" width="65" alt="Timberwolves">
+                                        <p class="fs-5 fw-bold text-warning">Timberwolves</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/nets.svg" class="rounded" height="65" width="65" alt="Nets">
+                                        <p class="fs-5 fw-bold text-warning">Nets</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Warriors vs Magic</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> Nov 8, 2026, 19:30
+                                </small>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/warriors.svg" class="rounded" height="65" width="65" alt="Warriors">
+                                        <p class="fs-5 fw-bold text-warning">Warriors</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/Magic.svg" class="rounded" height="65" width="65" alt="Magic">
+                                        <p class="fs-5 fw-bold text-warning">Magic</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- DECEMBER -->
+                <div id="december" class="mb-4">
+                    <button class="btn btn-success w-100 text-start fs-6 fw-bold" data-bs-toggle="collapse" data-bs-target="#december-games">
+                        <i class="bi bi-calendar3"></i> December 2026
+                        <i class="bi bi-caret-down-fill float-end"></i>
+                    </button>
+                    <div id="december-games" class="collapse">
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Wizards vs 76ers</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> Dec 2, 2026, 19:30
+                                </small>
+                                
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/wizards.svg" class="rounded" height="65" width="65" alt="Wizards">
+                                        <p class="fs-5 fw-bold text-warning">Wizards</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/76ers.svg" class="rounded" height="65" width="65" alt="76ers">
+                                        <p class="fs-5 fw-bold text-warning">76ers</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="box-games">
+                            <div class="game-post">
+                                <h3>Cavaliers vs Bulls</h3>
+                                <small>
+                                    <i class="bi bi-calendar3"></i> Dec 17, 2026, 19:30
+                                </small>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/cavaliers.svg" class="rounded" height="65" width="65" alt="Cavaliers">
+                                        <p class="fs-5 fw-bold text-warning">Cavaliers</p>
+                                    </div>
+                                    <div class="col-sm-1 text-center" style="padding-top: 20px;">
+                                        <h3>VS</h3>
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        <img src="images/chikagobulls.svg" class="rounded" height="65" width="65" alt="Bulls">
+                                        <p class="fs-5 fw-bold text-warning">Bulls</p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <button class="btn btn-secondary btn-sm">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- MEMORABLE GAMES SECTION -->
+                <div id="playoffs">
+                    <h4>Memorable NBA Games:</h4>
+                    <p>Explore the most iconic games in NBA history </p>
+                    <a href="memorygames.html" class="btn btn-primary btn-lg" style=" color: #ffffff; font-weight: bold;">
+                        Explore Legends NOW
+                    </a>
+                </div>
+
+                <hr>
+
+                <h4>Latest News:</h4>
+                <hr style="border-color: #444;">
+
+                <div class="row mb-3">
+                    <div class="col-sm-2 text-center">
+                        <img src="News/1.webp" class="rounded" height="100" width="150" alt="News">
+                    </div>
+                    <div class="col-sm-10">
+                        <h4>
+                            <a href="" data-bs-toggle="modal" data-bs-target="#newsModal1" class="text-light text-decoration-none">
+                                <ins>NBA, FIBA to move forward in January about exploring professional league in Europe</ins>
+                            </a>
+                            <br>
+                            <h6><small>Jan 2, 2026</small></h6>
+                        </h4>
+                        <p>The new league would offer every team in a FIBA-affiliated domestic league in Europe an annual, merit-based pathway to qualify.</p>
+                    </div>
+                </div>
+
+                <hr style="border-color: #444;">
+
+                <div class="row mb-3">
+                    <div class="col-sm-2 text-center">
+                        <img src="News/2.jpeg" class="rounded" height="100" width="150" alt="News">
+                    </div>
+                    <div class="col-sm-10">
+                        <h4>
+                            <a href="" data-bs-toggle="modal" data-bs-target="#newsModal2" class="text-light text-decoration-none">
+                                <ins>Mavericks' Cooper Flagg makes absurd 1st-half history never done in NBA before</ins>
+                            </a>
+                            <br>
+                            <h6><small>Jan 2, 2026</small></h6>
+                        </h4>
+                        <p>Cooper Flagg made NBA history in his debut performance with the Dallas Mavericks.</p>
+                    </div>
+                </div>
+
+                <hr style="border-color: #444;">
+
+                <div class="row mb-3">
+                    <div class="col-sm-2 text-center">
+                        <img src="News/A6GGBCKWVFDK7MKDKDR2HMQEWI.avif" class="rounded" height="100" width="150" alt="News">
+                    </div>
+                    <div class="col-sm-10">
+                        <h4>
+                            <a href="" data-bs-toggle="modal" data-bs-target="#newsModal3" class="text-light text-decoration-none">
+                                <ins>A lesson in NBA fragility from the Memphis Grizzlies</ins>
+                            </a>
+                            <br>
+                            <h6><small>Jan 2, 2026</small></h6>
+                        </h4>
+                        <p>The Grizzlies beat the Utah Jazz on Tuesday night, hanging on to the 9th spot in the Western Conference</p>
+                    </div>
+                </div>
+
+                <hr style="border-color: #444;">
+
+                <div class="row mb-3">
+                    <div class="col-sm-2 text-center">
+                        <img src="News/4.avif" class="rounded" height="100" width="150" alt="News">
+                    </div>
+                    <div class="col-sm-10">
+                        <h4>
+                            <a href="" data-bs-toggle="modal" data-bs-target="#newsModal4" class="text-light text-decoration-none">
+                                <ins>The Athletic: Why horses turn Nikola Jokić from an NBA MVP into a 'stable boy'</ins>
+                            </a>
+                            <br>
+                            <h6><small>Jan 2, 2026</small></h6>
+                        </h4>
+                        <p>The world has witnessed Nikola Jokić's love of horses. But only a few see the depth of passion: "They don't look at me as an NBA player."</p>
+                    </div>
+                </div>
                 
-            </div>
-            
-        </div>
-    </div>
-    <hr class="my-5 w-50 mx-auto" style="border-top: 5px solid rgb(255, 255, 255);">
-    <div class="container-fluid bg-dark text-white py-5">
-        <div class="row">
-            
-            <div class="col-md-6 px-4 mb-6">
-                <div class="text-center">
-                    <img src="images/losAngles.svg" class="icon-img" style="width: 100px; height: 100px;">
-                    <img src="images/torontoRaptors.svg" class="icon-img" style="width: 100px; height: 100px;">
+                <div id="newsModal1" class="modal fade" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="background-color: #1a1a1a; color: #fff;">
+                            
+                            
+                            <div class="modal-header" style="border-bottom: 2px solid #ffcc00;">
+                                <h5 class="modal-title text-warning">NBA, FIBA to move forward in January</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                            </div>
+                            
+                           
+                            <div class="modal-body">
+                                <h3 class="text-underline" style="color: #ffffff;"><ins>NBA, FIBA to move forward in January about exploring professional league in Europe</ins></h3>
+                                <img src="News/1.webp" class="rounded" style="width: 100%; height: auto; margin: 15px 0;" alt="News">
+                                <p>The Memphis Grizzlies beat the Utah Jazz, 137-128, on Tuesday night to improve to 14-16 on the season. That gave them a teeny, tiny boost in the fight for play-in positioning in the Western Conference.</p>
+                                <p>I guess that's some sort of an accomplishment.</p>
+                                <p>Frankly, it was hard to watch this game and decide what was worse — the tanking Jazz team whose defense helped to make Santi Aldama look like a world beater (the Wizards also did this the other night, so that's the kind of company the Jazz are in), or the Grizzlies team that was so recently considered to be on their way to perennial title contention, barely fighting for the ninth seed.</p>
+                                <p>It's not wild to imagine that if the Jazz were fielding a roster meant to win, playing only their best players on a regular basis and if Walker Kessler wasn't recovering from shoulder surgery, they could probably give a team like the Grizzlies a run for their money for a play-in spot (is that something to be proud of?). They might even be better than this version of the Grizzlies.</p>
+                                <p>But the Jazz aren't serious about getting wins, and they're still playing the Grizzlies pretty close (and the Jazz beat the Grizzlies in Memphis on Dec. 12).</p>
+                                <p>Remember when this Grizzlies team was one of the bright-future, must-watch teams of the NBA? It really wasn't that long ago. They were the No. 2 seed in the Western Conference for two straight seasons in 2021-22 and 2022-23. That's like yesterday in NBA years.</p>
+                                <p>They were widely regarded as one of the NBA's most fun teams to watch and then it all came crashing down. Watching the Memphis Grizzlies is a reminder of the fragility of the NBA and how the margins for error are so thin.</p>
+                                <p>Kyle Anderson, now a Jazz man, was one of the really important supporting cast members on that Memphis team. And he, like so many others wonders where things went wrong.</p>
+                                <p>"Yeah, I'm with you, kind of wondering what's going on over there," Anderson told the Deseret News. "My opinion of it is that front office walked into something really good, and put together a really good team at first. We were rolling. Then they kind of wanted to go in their own direction and bring in young guys that kind of fit more what they wanted to do. I think that's where they got mixed up and lost in the sauce."</p>
+                                <img src="News/3.avif" class="rounded" style="width: 100%; height: auto; margin: 15px 0;">
+                                <p>And then so many other things happened. Most notably, Ja Morant's off-court shenanigans. The point, though, is that every decision from every person on an NBA team has to come together in the perfect way to even get close to being able to compete for a title.</p>
+                                <p>It takes so many things to go right for a team to be great. There needs to be talent, buy-in, good coaching, tenacity, freedom from distractions. And any small crack in the foundation can have catastrophic consequences. Because on NBA teams, one small crack often spreads and splinters and leads to more and more dysfunction.</p>
+                                <p>And the Grizzlies have gone through just about all of it — front office decisions changing the chemistry of the team, tensions between players and coaches, off-court behavior impacting availability of stars (time and time again), fractures in relationships, deals that have split up a once-hungry and competitive nucleus, injuries, coaching turnover, etc., etc.</p>
+                                <p>There's probably a number of teams that don't think they are susceptible to these things happening to them, but it takes just one disgruntled star, one player being around the wrong people, one person getting bad advice, one person making a bad decision.</p>
+                                <p>I guess when considering all of these things, it's the Grizzlies who were the most disappointing to watch on Tuesday night — thinking of what could have been. Instead, there was Morant, in street clothes, yet again injured, watching his team from the sideline, knowing that even if they make it to the play-in tournament, that would mean being destined for the Oklahoma City Thunder swiftly sweeping them in the first round.</p>
+                            </div>
+                            
+                            
+                            <div class="modal-footer" style="border-top: 2px solid #ffcc00;">
+                                <a href="https://www.nba.com/news/nba-fiba-europe-pro-league-discussion-january" class="btn btn-secondary" target="_blank">Details</a>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
-                <h2 class="text-center mb-3">KOBE 81 (2006)</h2>
-                <h3 class="text-center mb-3">January 22, 2006</h3>
-                <hr class="my-5 w-50 mx-auto" style="border-top: 5px solid rgb(255, 255, 255);">
-                <h2 class="text-center mb-3">Regular Season</h2>
-                <h2 class="text-center mb-3">Los Angeles Lakers vs Toronto Raptors</h2>
-                <h2 class="text-center mb-3">122-104</h2>
-                <hr class="my-5 w-50 mx-auto" style="border-top: 5px solid rgb(255, 255, 255);">
-                <h3>The second-greatest scoring performance in NBA history. Kobe Bryant erupted for 81 points — 55 in the second half alone. He made 28 of 46 shots from the field and single-handedly brought the Lakers back from an 18-point deficit. Only Wilt Chamberlain's 100-point game stands above this masterpiece.
-                </h3>
-            </div>
-            
-            <div class="col-md-6 px-4 mb-6">
-                <div class="text-center">
-                    <img src="images/covalent.svg" class="icon-img" style="width: 100px; height: 100px;">
-                    <img src="images/golden-state.svg" class="icon-img" style="width: 100px; height: 100px;">
-                </div>
-                <h2 class="text-center mb-3">THE BLOCK (2016)</h2>
-                <h3 class="text-center mb-3">June 19, 2016</h3>
-                <hr class="my-5 w-50 mx-auto" style="border-top: 5px solid rgb(255, 255, 255);">
-                <h2 class="text-center mb-3">NBA Finals Game 7</h2>
-                <h2 class="text-center mb-3">Cleveland Cavaliers vs Golden State Warriors</h2>
-                <h2 class="text-center mb-3">93-89</h2>
-                <hr class="my-5 w-50 mx-auto" style="border-top: 5px solid rgb(255, 255, 255);">
-                <h3>Down 3-1 to the 73-win Warriors, Cleveland did the impossible. With the game tied and under two minutes left, LeBron James chased down Andre Iguodala and pinned his layup against the backboard. Kyrie Irving hit the go-ahead three. Cleveland won its first championship in 52 years. LeBron wept on the court.
-                </h3>
+
                 
-            </div>
-            
-        </div>
-    </div>
-    <hr class="my-5 w-50 mx-auto" style="border-top: 5px solid rgb(255, 255, 255);">
-    <div class="container-fluid bg-dark text-white py-5">
-        <div class="row">
-            
-            <div class="col-md-6 px-4 mb-6">
-                <div class="text-center">
-                    <img src="images/losAngles.svg" class="icon-img" style="width: 100px; height: 100px;">
-                    <img src="images/philadelphia76Er.svg" class="icon-img" style="width: 100px; height: 100px;">
+                <div id="newsModal2" class="modal fade" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="background-color: #1a1a1a; color: #fff;">
+                            
+                            
+                            <div class="modal-header" style="border-bottom: 2px solid #ffcc00;">
+                                <h5 class="modal-title text-warning">Cooper Flagg Makes History</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                            </div>
+                            
+                            
+                            <div class="modal-body">
+                                <h3 style="color: #ffffff;"><ins>Mavericks' Cooper Flagg makes absurd 1st-half history never done in NBA before</ins></h3>
+                                <img src="News/2.jpeg" class="rounded" style="width: 100%; height: auto; margin: 15px 0;" alt="News">
+                                <p>Mavericks' Cooper Flagg makes absurd 1st-half history never done in NBA before originally appeared on The Sporting News. Add The Sporting News as a Preferred Source by clicking here.</p>
+                                <p>Cooper Flagg continues to prove he's the truth.</p>
+                                <p>Having just turned 19, Flagg remains a record-setting rookie for the Dallas Mavericks after being the No. 1 overall pick out of Duke in the 2025 NBA Draft.</p>
+                                <p>He didn't even need a full game to make history on Tuesday night.</p>
+                                <p>Nope, Flagg had a first half so good it had never been done before.</p>
+                                <p>The feat: Flagg is the youngest player in NBA history to have a half with 20-plus points on 90% or better shooting from the floor.</p>
+                                <p>Flagg went for 22 against the Nuggets on 9-for-10, including 3-for-3 from 3-point range (he also made his only free throw attempt).</p>
+                                <p>Flagg added four rebounds, four assists, one steal and one block.</p>
+                            </div>
+                            
+                            <!-- Footer -->
+                            <div class="modal-footer" style="border-top: 2px solid #ffcc00;">
+                                <a href="https://www.nba.com/news/nba-fiba-europe-pro-league-discussion-january" class="btn btn-secondary" target="_blank">Details</a>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
-                <h2 class="text-center mb-3">MAGIC'S ROOKIE MIRACLE (1980)</h2>
-                <h3 class="text-center mb-3">May 16, 1980</h3>
-                <hr class="my-5 w-50 mx-auto" style="border-top: 5px solid rgb(255, 255, 255);">
-                <h2 class="text-center mb-3">NBA Finals Game 6</h2>
-                <h2 class="text-center mb-3">Los Angeles Lakers vs Philadelphia 76ers</h2>
-                <h2 class="text-center mb-3">123-107</h2>
-                <hr class="my-5 w-50 mx-auto" style="border-top: 5px solid rgb(255, 255, 255);">
-                <h3>With Kareem Abdul-Jabbar injured, 20-year-old rookie Magic Johnson stepped up. He played all five positions — including center — and delivered one of the greatest Finals performances ever. 42 points, 15 rebounds, 7 assists. A rookie winning Finals MVP. Basketball had never seen anything like it.
-                </h3>
-            </div>
-            
-            <div class="col-md-6 px-4 mb-6">
-                <div class="text-center">
-                    <img src="images/miamiHit.svg" class="icon-img" style="width: 100px; height: 100px;">
-                    <img src="images/spurs.svg" class="icon-img" style="width: 100px; height: 100px;">
-                </div>
-                <h2 class="text-center mb-3">RAY ALLEN'S MIRACLE (2013)</h2>
-                <h3 class="text-center mb-3">June 18, 2013</h3>
-                <hr class="my-5 w-50 mx-auto" style="border-top: 5px solid rgb(255, 255, 255);">
-                <h2 class="text-center mb-3">NBA Finals Game 6</h2>
-                <h2 class="text-center mb-3">Miami Heat vs San Antonio Spurs</h2>
-                <h2 class="text-center mb-3">103-100 (OT)</h2>
-                <hr class="my-5 w-50 mx-auto" style="border-top: 5px solid rgb(255, 255, 255);">
-                <h3>The Spurs were 5 seconds away from the championship. The arena staff had already set up the ropes for the trophy presentation. Then Chris Bosh grabbed an offensive rebound and kicked it to Ray Allen in the corner. His three-pointer tied the game with 5.2 seconds left. Miami won in overtime and took Game 7 to claim the title.
-                </h3>
+
                 
-            </div>
-            
-        </div>
-    </div>
-    <hr class="my-5 w-50 mx-auto" style="border-top: 5px solid rgb(255, 255, 255);">
-    <div class="container text-center"  id="">
-        
-        <h1>NBA Games & Scores</h1>
-    </div>
-   
+                <div id="newsModal3" class="modal fade" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="background-color: #1a1a1a; color: #fff;">
+                            
+                            
+                            <div class="modal-header" style="border-bottom: 2px solid #ffcc00;">
+                                <h5 class="modal-title text-warning">Memphis Grizzlies</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                            </div>
+                            
+                            
+                            <div class="modal-body">
+                                <h3 style="color: #ffffff;"><ins>A lesson in NBA fragility from the Memphis Grizzlies</ins></h3>
+                                <img src="News/A6GGBCKWVFDK7MKDKDR2HMQEWI.avif" class="rounded" style="width: 100%; height: auto; margin: 15px 0;" alt="News">
+                                <p>MIES, SWITZERLAND AND NEW YORK — The National Basketball Association (NBA) and the International Basketball Federation (FIBA) today announced that they will in January move forward in their joint exploration of a new professional, pan-European men's basketball league by engaging prospective teams and ownership groups in the process to join the league.</p>
+                                <p>In addition to permanent spots, the new league would offer every team in a FIBA-affiliated domestic league in Europe a merit-based pathway to qualify on an annual basis either through FIBA's Basketball Champions League (BCL) or an end-of-season qualifying tournament.  The league would also align its schedule with domestic league and national team schedules, allowing players to represent their club and national team year-round.</p>
+                                <p>As part of the new league, the NBA and FIBA would also plan to dedicate financial support and resources to the continued development of Europe's basketball ecosystem, including domestic leagues, club team academies, and the NBA and FIBA's existing programs to develop aspiring players, coaches and referees at all levels of the game.</p>
+                                <p>"Advancing further this joint NBA-FIBA project is great news for the European basketball community," said FIBA Secretary General Andreas Zagklis.  "The format of the league respects European sport model principles by offering any ambitious club in the continent a fair pathway to the top.  The project is conceived in a way that will improve the sustainability of the entire European basketball ecosystem, including players, clubs, leagues and national federations, by generating a knock-on effect that will strongly benefit basketball fans throughout Europe."</p>
+                                <p>"Our conversations with various stakeholders in Europe have reinforced our belief that an enormous opportunity exists around the creation of a new league on the continent," said NBA Commissioner Adam Silver.  "Together with FIBA, we look forward to engaging prospective clubs and ownership groups that share our vision for the game's potential in Europe."</p>
+                                <p>The NBA and FIBA will provide additional updates in the coming months.</p>
+                            </div>
+                            
+                            <!-- Footer -->
+                            <div class="modal-footer" style="border-top: 2px solid #ffcc00;">
+                                <a href="https://www.nba.com/news/nba-fiba-europe-pro-league-discussion-january" class="btn btn-secondary" target="_blank">Details</a>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="newsModal4" class="modal fade" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="background-color: #1a1a1a; color: #fff;">
+                            
+                            
+                            <div class="modal-header" style="border-bottom: 2px solid #ffcc00;">
+                                <h5 class="modal-title text-warning">Nikola Jokić and His Horses</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                            </div>
+                            
+                            
+                            <div class="modal-body">
+                                <h3 style="color: #ffffff;"><ins>The Athletic: Why horses turn Nikola Jokić from an NBA MVP into a 'stable boy'</ins></h3>
+                                <img src="News/6.avif" class="rounded" style="width: 100%; height: auto; margin: 15px 0;">
+                                <p>DENVER — One of the most viral videos of Nikola Jokić's career will likely go down of him being selected in the second round of the 2014 NBA Draft as a Taco Bell commercial played on the screen. Another viral video of The Joker has nothing to do with him playing basketball at all.</p>
+                                <p>Over the summer, a harness racing event took place in his native Serbia. It wouldn't have registered on the world stage had it not been for the sight of the three-time NBA MVP openly shedding tears of joy as he made his way to greet the drivers of Dream Catcher, his horse racing operation, helping his horse, Demon Dell'Est, to victory.</p>
+                                <p>To understand that sentiment, it's important to grasp how much Serbia's favorite son was attracted to horses in the first place.</p>
+                                <p>"We have a saying," Jokić told The Athletic. 'If you're young and you swallow the horse hair, you cannot stop loving them.' What I like about them is how they run, how they act, how they're resting, how they're smelling. I like to watch them, I like to train them, I like to see them running, racing. The only thing I didn't do, I did want to race back in the day. I miss that feeling when you and the horse are basically one."</p>
+                                <p>The footage of Jokić crying not only became a viral sensation but also served as a glimpse into a very public and famous figure's private life. It was a human moment for one of the greatest basketball players of all time that quickly became a source of intrigue.</p>
+                                <p>The scene created a question of its own: Why is Jokić, who famously didn't show much emotion after leading the Nuggets to the 2023 NBA championship and couldn't wait to get out of Denver, suddenly so overcome with emotion that he was crying after a horse race in Serbia?</p>
+                                <p>Anyone who knows Jokić knows how much he cares about the animals. He has pictures of horses adorned to his locker inside Ball Arena and ribbons from different competitions.</p>
+                                <p>Nuggets assistant coach Ogi Stojaković has known Jokić for years, dating to the pair's shared history in Serbia. He believes that Jokić is drawn to a horse's nobility and can see the pride the big man takes in caring for the animals.</p>
+                                <p><pre>"Honestly," Stojaković said. "I think that's his first love."</pre></p>
+                                <p>Aaron Gordon still remembers what it was like to walk with Jokić through the streets of Sombor, Serbia. Gordon saw the way the locals treated the famous player and the way Jokić embraced his surroundings.</p>
+                                <p><pre>"You understand why he's as humble as he is," Gordon said. "They still see him as a stable boy out there."</pre></p>
+                                <p>Gordon has been Jokić's teammate with the Nuggets for six years and was a member of that 2023 championship team. He's gotten to know just how passionate Jokić is about everything regarding horses, why they matter so much to him and what they represent for him. Gordon knows how competitive his teammate is and that the racing appeals to that side of Jokić's personality as well. He said that Jokić having a racetrack in his hometown is "special."</p>
+                                <p>"I think he appreciates how beautiful they are," Gordon said of the horses. "There's something majestic, and there's something really genuine and pure about horses in general. I think it brings him a certain level of peace, and that's priceless."</p>
+                                <p>As he toured Sombor with Jokić, Gordon said it was easier to understand why he has turned out the way that he has, especially in the context of why his relationship with the horses has remained as strong as it has through the years.</p>
+                                <p>"The way that he lives and the way that he approaches his life in the game," Gordon said, "it makes sense for him to be the greatest."</p>
+                                <p>"It's funny," Jokić said. "We go fishing together, we drink together, we lose together, we win together, so I see him as my friend. And actually, his son is the best man at my wedding, so it's a cool story."</p>
+                                <img src="News/5.avif" class="rounded" style="width: 100%; height: auto; margin: 15px 0;">
+                            </div>
+                            
+                            
+                            <div class="modal-footer" style="border-top: 2px solid #ffcc00;">
+                                <a href="https://www.nba.com/news/nba-fiba-europe-pro-league-discussion-january" class="btn btn-secondary" target="_blank">Details</a>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <hr>
 
 
 
-    
+
+
+
+
+
+            </div>
+        </div>
+</div>
+
+            </div>
+        </div>
+    </div>
 </body>
-</html>

@@ -5,83 +5,43 @@ body {
     background-color: #000000;
 }
 
-.navbar {
-    margin-bottom: 0;
-    color: black;
-    border-radius: 0;
-}
-
-
-.navbar-inverse {
-    background-color: #000000; 
-    border-color: #b7b5b5;     
-}
-
-
-.navbar-inverse .navbar-nav>li>a {
-    color: #ffffff; 
-}
-
-
-.navbar-inverse .navbar-brand {
-    color: #ffffff;
-}
-@media (min-width: 768px) {
-    .navbar .container-fluid {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .navbar-header {
-        float: none;
-    }
-    .navbar-nav {
-        float: none;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-    }
-    .navbar-nav > li {
-        float: none;
-    }
-    .navbar-form {
-        float: none;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-right: 0;
-    }
-}
-
-
-@media (min-width: 768px) {
-    .navbar .container-fluid {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .navbar-header {
-        float: none;
-    }
-    .navbar-nav {
-        float: none;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-    }
-    .navbar-nav > li {
-        float: none;
-    }
-    .navbar-form {
-        float: none;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-right: 0;
-    }
-}
 
 .icon-img {
     width: 60px;
     height: 60px;
-    object-fit:contain; /* чтобы не искажались */
+    object-fit:contain; 
     margin: 5px;
 }
+
+.game-card {
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.legendaries-matches {
+    border: 2px solid #ff2600;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(42, 42, 42, 0.3);
+    background-color: #1a1a1a;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+.legendaries-matches {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 24px rgba(218, 10, 10, 0.2);
+    border-color: #e63333;
+    
+}
+
+.box-games {
+    border-bottom: 2px solid #505050;
+}
+
+
+

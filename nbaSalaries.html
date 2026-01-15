@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Wiki</title>
+    <link rel="icon" type="image/png" href="dataImage/basketball-4264543_1920.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="welcome.html" style="font-family: 'Georgia', serif;">
+                NBA Wiki
+                <img src="dataImage/basketball-4264543_1920.png" alt="NBA Logo" style="height: 40px; width: auto;" class="d-inline-block align-text-top ms-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" role="button">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="games.html">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="teams.html">Teams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="players.html">Players</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav id="navbar-scroll" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#top-paid">Top Paid</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#biggest-contracts">Biggest Contracts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#evolution">Evolution</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#revenue">Revenue</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#system">Payment System</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#beyond">Beyond Contract</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="text-center">
+        <h2 class="mb-5 mt-4" style="font-family: nyt-cheltenham, georgia, times new roman, times, serif;">Where The Money Comes From & How Players Earn It</h2>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+
+            </div>
+            <div class="col-8" id="top-paid">
+                <div class="text-center">
+                    <h5 class="mb-3 mt-4" style="font-family: nyt-cheltenham, georgia, times new roman, times, serif;">TOP 10 HIGHEST-PAID PLAYERS 2025-26</h4>
+                        <p>The League's Richest: 2025-26 Season</p>
+                </div>
+                <table class="table table-striped table-hover table-dark table-sm brd-r">
+                    <thead>
+                        <tr>
+                            <th>
+                                Name
+                            </th>
+                            <th>
+                                Club
+                            </th>
+                            <th>
+                                earning
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Stephen Curry</td>
+                            <td>Golden State Warriors</td>
+                            <td>$59.6 million</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Joel Embiid
+                            </td>
+                            <td>
+                                Philadelphia 76ers
+                            </td>
+                            <td>
+                                $55.2 million
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nikola Jokić </td>
+                            <td>Denver Nuggets</td>
+                            <td>$55.2 million</td>
+                        </tr>
+                        <tr>
+                            <td>Kevin Durant</td>
+                            <td>Houston Rockets</td>
+                            <td>$54.7 million</td>
+                        </tr>
+                        <tr>
+                            <td>Giannis Antetokounmpo</td>
+                            <td>Milwaukee Bucks</td>
+                            <td>$54.1 million</td>
+                        </tr>
+                        <tr>
+                            <td>Karl-Anthony Towns</td>
+                            <td>New York Knicks</td>
+                            <td>$54.1 million</td>
+                        </tr>
+                        <tr>
+                            <td>Luka Dončić</td>
+                            <td>Los Angeles Lakers</td>
+                            <td>$54.1 million</td>
+                        </tr>
+                        <tr>
+                            <td>Jimmy Butler</td>
+                            <td>Golden State Warriors</td>
+                            <td>$54.1 million</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Davis</td>
+                            <td>Dallas Mavericks</td>
+                            <td>$54.1 million</td>
+                        </tr>
+                        <tr>    
+                            <td>Jayson Tatum</td>
+                            <td>Boston Celtics</td>
+                            <td>$54.1 million</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-2">
+
+            </div>
+            <div class="col-8" id="biggest-contracts">
+                <h5 class="mb-1 mt-4 text-center" style="font-family: nyt-cheltenham, georgia, times new roman, times, serif;">BIGGEST CONTRACTS IN NBA HISTORY</h5>
+                <h6 class="mb-3 mt-2 text-center" style="font-family: nyt-cheltenham, georgia, times new roman, times, serif;">Record-Breaking Deals</h6>
+
+                <div>
+                    <p><strong>Top 5 Largest Contracts</strong></p>
+                    <ol type="1">
+                        <li>Jayson Tatum (Boston Celtics)
+                            <ul>
+                                <li>$314 million / 5 years (2024)</li>
+                                <li>Largest contract in NBA history</li>
+                            </ul>
+                        </li>
+                        <li class="mt-2">
+                            Jaylen Brown (Boston Celtics)
+                            <ul>
+                                <li>
+                                    $285 million / 5 years (2023)
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mt-2">
+                            Nikola Jokić (Denver Nuggets)
+                            <ul>
+                                <li>
+                                    $270 million / 5 years
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mt-2">
+                            Giannis Antetokounmpo (Milwaukee Bucks)
+                            <ul>
+                                <li>
+                                    $256 million / 5 years
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mt-2">
+                            Stephen Curry (Golden State Warriors)
+                            <ul>
+                                <li>
+                                    $215 million / 4 years (2021)
+                                </li>
+                                <li>
+                                    First player in history with two $200+ million contracts
+                                </li>
+                            </ul>
+                        </li>
+                        
+                    </ol>
+                </div>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-2">
+
+            </div>
+            <div class="col-8" id="evolution">
+                <h5 class="mb-1 mt-4 text-center" style="font-family: nyt-cheltenham, georgia, times new roman, times, serif;">EVOLUTION OF NBA SALARIES</h5>
+                <h6 class="mb-1 mt-4 text-center" style="font-family: nyt-cheltenham, georgia, times new roman, times, serif;">From Side Jobs to Supermaxes</h6>
+
+                <div>
+                    <p><strong>Salary Timeline</strong></p>
+                    <ul>
+                        <li>1970s: The Struggle Era
+                            <ul>
+                                <li>Average salary: $35,000 per year ($224,000 today)</li>
+                                <li>Rookies: $15,000-$20,000</li>
+                                <li>Players worked off-season jobs to pay rent</li>
+                                <li>Kareem Abdul-Jabbar became first to earn $250,000 per year</li>
+                            </ul>
+                        </li>
+                        <li>
+                            1980s: Magic's $25 Million Miracle
+                            <ul>
+                                <li>1981: Magic Johnson signed revolutionary $25 million contract for 25 years</li>
+                                <li>1984: First salary cap introduced — $3.6 million</li>
+                                <li>1987-1990: Patrick Ewing was highest-paid player ($2.8-$4.3 million)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            1990s: Jordan's Record
+                            <ul>
+                                <li>1997-98: Michael Jordan earned $33.1 million for one season</li>
+                                <li>That's $65.2 million in today's money</li>
+                                <li>Jordan earned $94 million total in his career</li>
+                            </ul>
+                        </li>
+                        <li>
+                            2000s-2010s: The Boom
+                            <ul>
+                                <li>Average salary grew from $2 million to $7.9 million</li>
+                                <li>Rookie minimum salary: $1 million</li>
+
+                            </ul>
+                        </li>
+                        <li>2020s: The Supermax Era
+                            <ul>
+                                <li>Average salary: $8.25 million</li>
+                                <li>Salary cap 2025-26: $140.6 million</li>
+                                <li>Top players: $50-60 million per season</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8" id="revenue">
+                <h5 class="mb-1 mt-4 text-center" style="font-family: nyt-cheltenham, georgia, times new roman, times, serif;">WHERE DOES ALL THIS MONEY COME FROM?</h5>
+                <h6 class="mb-3 mt-4 text-center" style="font-family: nyt-cheltenham, georgia, times new roman, times, serif;">The Business Behind the Billions</h6>
+                <img src="salariesNBA/2b168840-1464-48f3-8516-9bc233b60ad5_4032x3024.webp" alt="salary" class="img-fluid">
+                <h6 class="mt-5">NBA earned $11.34 billion in the 2023-24 season. Where does it come from?</h6>
+                <div>
+                    <ol type="1">
+                        <div class="progress my-3" style="width: 40rem;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:33%">Media Rights</div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:15%">Sponsorships</div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:17%">Ticket Sales</div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:15%">Licensing</div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:20%">Partnerships</div>
+                        </div>
+                        <li>Media Rights (TV & Streaming) — 33% of revenue
+                            <ul>
+                                <li>NBA signed $76 billion deal over 11 years with ESPN, Amazon, NBC</li>
+                                <li>That's $7 billion per year — double the previous deal</li>
+                                <li>TV contracts directly impact salary cap</li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            Sponsorships & Advertising — 15%
+                            <ul>
+                                <li>Nike: $1 billion for 8 years for jerseys</li>
+                                <li>Jersey Patches: Small logos bring $150+ million annually</li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            Ticket Sales & Game-Day Revenue — 15-20%
+                            <ul>
+                                <li>$2.5 billion annually from tickets, food, parking</li>
+                            </ul>
+                        </li>
+                        
+                        <li>Merchandise & Licensing
+                            <ul>
+                                <li>Jerseys, sneakers, toys, video games</li>
+                                <li>NBA 2K generates $150 million yearly</li>
+                            </ul>
+                        </li>
+                        
+                        <li>Sports Betting Partnerships
+                            <ul>
+                                <li>Deals with DraftKings, FanDuel, BetMGM</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-2">
+            </div>
+            <div class="col-8" id="system">
+                <h5 class="mb-1 mt-4 text-center" style="font-family: nyt-cheltenham, georgia, times new roman, times, serif;">HOW DO PLAYERS GET PAID?</h5>
+                <h6 class="mb-3 mt-4 text-center" style="font-family: nyt-cheltenham, georgia, times new roman, times, serif;">The Salary System Explained</h6>
+                <p>The NBA operates one of the most complex salary structures in professional sports, balancing competitive fairness with player earning potential. At its core lies a revenue-sharing agreement that ensures players receive exactly half of what the league earns, while intricate contract rules determine who gets the biggest paychecks
+                </p>
+                <hr>
+                <p><strong>
+                    The 50/50 Split: Basketball's Fair Deal
+                </strong></p>
+                <p>
+                    Unlike many professional leagues, the NBA guarantees players exactly 50% of all league revenue through Basketball Related Income (BRI). This partnership approach means when the NBA thrives, players automatically benefit. If the league generates $11 billion in a season, players collectively receive $5.5 billion.
+                </p>
+                <p>
+                    <strong>
+                        What counts as BRI:
+                    </strong>
+                </p>
+                <ul>
+                    <li>Television broadcast rights</li>
+                    <li>Ticket sales and arena revenue</li>
+                    <li>Merchandise and licensing</li>
+                    <li>Sponsorship deals</li>
+                    <li>International revenue</li>
+                </ul>
+                <p>
+                    <strong>
+                        Why this matters:
+                    </strong>
+                </p>
+                <ul>
+                    <li>When NBA signed a $76 billion TV deal, salary cap jumped from $70M to $140M</li>
+                    <li>Players don't negotiate their share — it's guaranteed 50/50</li>
+                    <li>This system created the supermax era we see today</li>
+                </ul>
+                <hr>
+                <p>
+                    <strong>
+                        Max Contracts: The Salary Ladder
+                    </strong>
+                </p>
+                <p>Not all max contracts are equal. Your earning potential depends on how long you've been in the league:
+                </p>
+                <p>
+                    <strong>
+                        Standard Max Contract Levels:
+                    </strong>
+                </p>
+                <p>
+                    <strong>
+                        Tier 1: Young Stars (0-6 years experience)
+                    </strong>
+                </p>
+                <ul>
+                    <li>25% of salary cap</li>
+                    <li>Cap = $140.6M, Max = $35.1M per year</li>
+                    <li>Example: Young All-Stars on their second contract</li>
+                </ul>
+                <p>
+                    <strong>
+                        Tier 2: Established Players (7-9 years experience)
+                    </strong>
+                </p>
+                <ul>
+                    <li>30% of salary cap</li>
+                    <li>Cap = $140.6M, Max = $42.2M per year</li>
+                    <li>Example: Prime veterans proving consistent excellence</li>
+                </ul>
+                <p>
+                    <strong>
+                        Tier 3: League Veterans (10+ years experience)
+                    </strong>
+                </p>
+                <ul>
+                    <li>35% of salary cap</li>
+                    <li>Cap = $140.6M, Max = $49.2M per year</li>
+                    <li>Example: LeBron James, Stephen Curry</li>
+                </ul>
+                <p>
+                    <strong>
+                        Contract Length:
+                    </strong>
+                </p>
+                <ul>
+                    <li>With current team: Up to 5 years</li>
+                    <li>Signing with new team: Maximum 4 years</li>
+                    <li>Annual raises: 8% with current team, 5% with new team</li>
+                </ul>
+                <hr>
+                <p>
+                    <strong>
+                        Supermax Contracts: The Elite Tier
+                    </strong>
+                </p>
+                <p>
+                    The Designated Veteran Player Extension, commonly called the "Supermax," allows teams to offer 35% of the salary cap to exceptional players before they reach 10 years of experience. This prevents superstars from leaving small-market teams.
+                </p>
+                <p>
+                    <strong>
+                        Strict Criteria for Supermax:
+                    </strong>
+                </p>
+                <p>
+                    <strong>
+                        Years Required:
+                    </strong>
+                </p>
+                <ul>
+                    <li>Must have 8-9 years in the league</li>
+                    <li>Must be on the team that drafted you OR traded for you while on rookie contract</li>
+                </ul>
+                <p>
+                    <strong>
+                        PLUS one of these achievements:
+                    </strong>
+                </p>
+                <ul>
+                    <li>All-NBA Team (1st, 2nd, or 3rd) in the most recent season OR 2 of the last 3 seasons</li>
+                    <li>Defensive Player of the Year in the most recent season OR 2 of the last 3 seasons</li>
+                    <li>MVP Award in any of the last 3 seasons</li>
+                </ul>
+                <p>
+                    <strong>
+                        Current Supermax Examples:
+                    </strong>
+                </p>
+                <ul>
+                    <li>Jayson Tatum (Boston Celtics) — $314M / 5 years — Multiple All-NBA selections</li>
+                    <li>Nikola Jokić (Denver Nuggets) — $270M / 5 years — 3x MVP</li>
+                    <li>Giannis Antetokounmpo (Milwaukee Bucks) — $256M / 5 years — MVP + DPOY</li>
+                </ul>
+                <hr>
+                <p>
+                    <strong>
+                        Rookie Scale: Where It All Begins
+                    </strong>
+                </p>
+                <p>First-round draft picks don't negotiate their initial salaries — they're locked into the rookie scale.</p>
+                <p>
+                    <strong>
+                        2025-26 Rookie Scale (Top 10 Picks):
+                    </strong>
+                </p>
+                <table class="table table-striped table-hover table-dark table-sm brd-r">
+                    <thead>
+                        <tr>
+                            <th>Pick</th>
+                            <th>1st Year Salary</th>
+                            <th>4-Year Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#1</td>
+                            <td>$11.5 million</td>
+                            <td>~$50 million</td>
+                        </tr>
+                        <tr>
+                            <td>#2</td>
+                            <td>$10.3 million</td>
+                            <td>~$45 million</td>
+                        </tr>
+                        <tr>
+                            <td>#3</td>
+                            <td>$9.3 million</td>
+                            <td>~$40 million</td>
+                        </tr>
+                        <tr>
+                            <td>#5</td>
+                            <td>$7.6 million</td>
+                            <td>~$33 million</td>
+                        </tr>
+                        <tr>
+                            <td>#10</td>
+                            <td>$5.0 million</td>
+                            <td>~$22 million</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <strong>
+                        Rookie Contract Structure:
+                    </strong>
+                </p>
+                <ul>
+                    <li>Year 1-2: Guaranteed salaries</li>
+                    <li>Year 3-4: Team options (team decides to keep or release player)</li>
+                    <li>After Year 4: Player becomes restricted free agent</li>
+                </ul>
+                <p>
+                    <strong>
+                        The #1 Pick Path:
+                    </strong>
+                </p>
+                <ul>
+                    <li>Draft → $11.5M rookie salary</li>
+                    <li>Year 5 → Rookie max extension ($35M+ per year)</li>
+                    <li>Year 9 → Supermax eligibility ($60M+ per year)</li>
+                </ul>
+                <hr>
+                <p>
+                    <strong>
+                        Bird Rights: Breaking the Cap
+                    </strong>
+                </p>
+                <p>Named after Larry Bird, this rule allows teams to exceed the salary cap to re-sign their own players.</p>
+                <p>
+                    <strong>
+                        How Bird Rights Work:
+                    </strong>
+                </p>
+                <ul>
+                    <li>Player must be with team for 3 consecutive seasons without being waived</li>
+                    <li>Team can offer up to the max salary, regardless of cap space</li>
+                    <li>Contracts can be up to 5 years (vs 4 for free agents)</li>
+                    <li>Rights transfer if player is traded</li>
+                </ul>
+                <p>
+                    <strong>
+                        Why Teams Value Bird Rights:
+                    </strong>
+                </p>
+                <ul>
+                    <li>Golden State kept Curry, Thompson, Green together over the cap</li>
+                    <li>Allows dynasty building without losing stars</li>
+                    <li>Gives home team massive re-signing advantage</li>
+                </ul>
+                <p>
+                    <strong>
+                        Early Bird & Non-Bird Rights:
+                    </strong>
+                </p>
+                <ul>
+                    <li>Early Bird: 2 years with team → Can offer 175% of previous salary</li>
+                    <li>Non-Bird: 1 year with team → Can offer 120% of previous salary</li>
+                </ul>
+                <hr>
+                <p>
+                    <strong>
+                        Luxury Tax: The Price of Winning
+                    </strong>
+                </p>
+                <p>Teams can exceed the salary cap, but it costs them.</p>
+                <p>
+                    <strong>
+                        How Luxury Tax Works:
+                    </strong>
+                </p>
+                <p>2025-26 Luxury Tax Line: $170.8 million</p>
+                <p>
+                    <strong>
+                        Tax Penalties (per dollar over the line):
+                    </strong>
+                </p>
+                <ul>
+                    <li>$0-5M over: $1.50 per dollar</li>
+                    <li>$5-10M over: $1.75 per dollar</li>
+                    <li>$10-15M over: $2.50 per dollar</li>
+                    <li>$15-20M over: $3.25 per dollar</li>
+                    <li>$20M+ over: Escalates to $4.75+ per dollar</li>
+                </ul>
+                <p>
+                    <strong>
+                        Repeat Offender Tax (3+ years in luxury tax):
+                    </strong>
+                </p>
+                <ul>
+                    <li>$0-5M over: $2.50 per dollar</li>
+                    <li>$5-10M over: $2.75 per dollar</li>
+                    <li>Can reach $5+ per dollar in extreme cases</li>
+                </ul>
+                <p>
+                    <strong>
+                        2023-24 Luxury Tax Bills:
+                    </strong>
+                </p>
+                <ul>
+                    <li>Golden State Warriors: $176 million in tax</li>
+                    <li>LA Clippers: $144 million</li>
+                    <li>Boston Celtics: $62 million</li>
+                </ul>
+                <p>
+                    <strong>
+                        Where Does Tax Money Go?
+                    </strong>
+                </p>
+                <p>Tax payments are collected by the NBA and redistributed equally among teams that stayed under the luxury tax. This rewards fiscally responsible teams.</p>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-2">
+
+            </div>
+            <div class="col-8" id="beyond">
+                <h5 class="mb-1 mt-4 text-center" style="font-family: nyt-cheltenham, georgia, times new roman, times, serif;">BEYOND THE CONTRACT</h5>
+                <h6 class="mb-3 mt-4 text-center" style="font-family: nyt-cheltenham, georgia, times new roman, times, serif;">Other Income Streams: Where the Real Money Lives</h6>
+                <hr>
+                <p>
+                    <strong>
+                        Introduction Text
+                    </strong>
+                </p>
+                <p>For NBA superstars, their basketball salary is just the beginning. The most successful players have transformed themselves into global brands, earning two to three times their on-court salary through endorsements, business ventures, and strategic investments. While a max contract might pay $50-60 million per season, the off-court empire can generate $100+ million annually. This business-savvy approach has created a new generation of athlete-entrepreneurs who build wealth that lasts far beyond their playing careers.</p>
+                <hr>
+                <p>
+                    <strong>
+                        1. Endorsements: The Billion-Dollar Game
+                    </strong>
+                </p>
+                <p>The most lucrative income stream for elite NBA players comes from corporate partnerships and endorsement deals. Companies pay premium prices to associate their brands with basketball's biggest names, knowing these athletes influence millions of fans worldwide.</p>
+                <p>
+                    <strong>
+                        Top Earners:
+                    </strong>
+                </p>
+                <ul>
+                    <li>LeBron James: $80+ million per year from Nike, AT&T, Pepsi, Walmart, GMC</li>
+                    <li>Stephen Curry: $75+ million annually from Under Armour, Chase Bank, Rakuten</li>
+                    <li>Giannis Antetokounmpo: $40+ million from Nike, WhatsApp, JBL</li>
+                    <li>Kevin Durant: $35+ million from Nike, Coinbase, Weedmaps</li>
+                </ul>
+                <p>
+                    <strong>
+                        Types of Endorsement Deals:
+                    </strong>
+                </p>
+                <ul>
+                    <li>Apparel Contracts: Nike, Adidas, Under Armour (lifetime deals can exceed $1 billion)</li>
+                    <li>Tech Companies: Apple, Samsung, Google pay for athlete ambassadors</li>
+                    <li>Financial Services: Banks and crypto companies target athlete credibility</li>
+                    <li>Consumer Products: Everything from watches to razors to insurance</li>
+                    <li>Social Media Partnerships: Paid Instagram/TikTok posts ($100k-500k per post)</li>
+                </ul>
+                <hr>
+                <p>
+                    <strong>
+                        2. Shoe Contracts: The Gift That Keeps Giving
+                    </strong>
+                </p>
+                <p>Signature sneaker lines represent the holy grail of athlete income because they provide royalties on every single sale. Unlike one-time endorsement fees, shoe royalties create passive income streams that can last decades.</p>
+                <p>
+                    <strong>
+                        The Jordan Effect:
+                    </strong>
+                </p>
+                <p>Michael Jordan's Jordan Brand continues paying his estate over $150 million annually — more than 20 years after his retirement. The brand generates over $5 billion in annual revenue, with Jordan receiving a percentage of every sale.</p>
+                <p>
+                    <strong>
+                        Modern Shoe Deals:
+                    </strong>
+                </p>
+                <ul>
+                    <li>LeBron James: Lifetime Nike deal estimated at $1+ billion</li>
+                    <li>Stephen Curry: Under Armour equity stake worth $300+ million</li>
+                    <li>Giannis Antetokounmpo: Nike signature line with royalties</li>
+                    <li>Kyrie Irving: Signature line generates $100+ million annually</li>
+                </ul>
+                <p>
+                    <strong>
+                        Why Shoes Matter:
+                    </strong>
+                </p>
+                <ul>
+                    <li>Royalties on every pair sold (typically 3-8% of wholesale price)</li>
+                    <li>International sales multiply earnings</li>
+                    <li>Retro releases create income for decades</li>
+                    <li>Equity stakes in shoe companies (Curry owns Under Armour stock)</li>
+                </ul>
+                <hr>
+                <p>
+                    <strong>
+                        3. Equity Deals & Strategic Investments
+                    </strong>
+                </p>
+                <p>The smartest NBA players have learned to negotiate equity stakes instead of cash payments, turning endorsement deals into ownership positions that appreciate over time.</p>
+                <p>
+                    <strong>
+                        LeBron James' Investment Portfolio:
+                    </strong>
+                </p>
+                <ul>
+                    <li>Blaze Pizza: Early investor, chain now worth $1+ billion</li>
+                    <li>Liverpool FC: 2% stake in English soccer club</li>
+                    <li>Beats by Dre: Earned $30+ million when Apple acquired the company</li>
+                    <li>Tonal Fitness: Home gym company</li>
+                    <li>SpringHill Company: His own media production company</li>
+                </ul>
+                <p>
+                    <strong>
+                        Kevin Durant's Tech Investments:
+                    </strong>
+                </p>
+                <ul>
+                    <li>Coinbase: Invested before IPO, now worth $100+ million</li>
+                    <li>Postmates: Sold to Uber for billions</li>
+                    <li>Lime Scooters: Early backer</li>
+                    <li>Robinhood: Trading app investment</li>
+                    <li>Thirty Five Ventures: His investment firm with 80+ portfolio companies</li>
+                </ul>
+                <hr>
+                <p>
+                    <strong>
+                        Other Notable Investors:
+                    </strong>
+                </p>
+                <ul>
+                    <li>Stephen Curry: Guild Education, SnapTravel</li>
+                    <li>Andre Iguodala: Known as "Silicon Valley's favorite NBA player" with 50+ investments</li>
+                    <li>Kobe Bryant (legacy): BodyArmor investment netted $400 million profit</li>
+                </ul>
+                <hr>
+                <p>
+                    <strong>
+                        4. Media & Entertainment Ventures
+                    </strong>
+                </p>
+                <p>
+                    Players create long-term income through content production:
+                </p>
+                <ul>
+                    <li>Production Companies: LeBron's SpringHill Company produced "Space Jam 2"</li>
+                    <li>Podcasts: Players earn $50k-200k per sponsored episode</li>
+                    <li>YouTube Channels: Ad revenue and sponsorships</li>
+                    <li>Documentaries: "The Last Dance" paid Jordan $10+ million</li>
+                    <li>TV Commentary: Retired players earn $2-10 million annually</li>
+                </ul>
+                <hr>
+                <p>
+                    <strong>
+                        5. Post-Career Opportunities
+                    </strong>
+                </p>
+                <p>
+                    <strong>
+                        The NBA brand opens doors for life:
+                    </strong>
+                </p>
+                <ul>
+                    <li>Team Ownership: Michael Jordan bought Charlotte Hornets for $275 million, sold majority stake for $3 billion</li>
+                    <li>Coaching: Top coaches earn $10-15 million per year</li>
+                    <li>Broadcasting: TNT, ESPN pay $5-10 million for former stars</li>
+                    <li>Speaking Engagements: $100k-500k per appearance</li>
+                    <li>Board Positions: Corporate boards pay $200k-500k annually
+                    </li>
+                </ul>
+                <hr>
+                <p>
+                    <strong>
+                        The Bottom Line
+                    </strong>
+                </p>
+                <p>
+                    <strong>
+                        Quick Comparison:
+                    </strong>
+                </p>
+                <ul>
+                    <li>Average NBA Salary: $8-10 million/year</li>
+                    <li>Top Star NBA Salary: $50-60 million/year</li>
+                    <li>LeBron's Off-Court Income: $80+ million/year</li>
+                    <li>Jordan's Annual Income (Retired): $150+ million/year</li>
+                </ul>
+                <p>The lesson? The smartest NBA players treat their basketball career as a 10-15 year window to build a brand, then leverage that brand into generational wealth that lasts forever.</p>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+        
+    </div>  
+    <hr>
+    
+
+
+    <div class="container-fluid py-4">
+    <div class="row align-items-center">
+        
+        <div class="col-md-3"></div>
+        
+        
+        <div class="col-md-6 d-flex justify-content-center">
+            <ul class="pagination mb-0">
+                <li class="page-item"><a class="page-link" href="teamhistory.html">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="teamhistory.html">2</a></li>
+                <li class="page-item active"><a class="page-link" href="nbaSalaries.html">3</a></li>
+                <li class="page-item disabled"><a class="page-link" href="nbaSalaries.html">Next</a></li>
+            </ul>
+        </div>
+        
+        
+        <div class="col-md-3 d-flex justify-content-end">
+            <a href="#top" class="btn btn-dark">
+                ↑ To the Top
+            </a>
+        </div>
+    </div>
+</body>

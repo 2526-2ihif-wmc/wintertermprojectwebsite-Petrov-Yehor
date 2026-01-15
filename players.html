@@ -3,38 +3,544 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Players - NBA Project</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>NBA Wiki</title>
+    <link rel="icon" type="image/png" href="dataImage/basketball-4264543_1920.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylePlayers.css">
 </head>
 <body>
-    <nav class="navbar navbar-inverse">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">NBA Project</a>
+            <a class="navbar-brand" href="welcome.html" style="font-family: 'Georgia', serif;">
+                NBA Wiki
+                <img src="dataImage/basketball-4264543_1920.png" alt="NBA Logo" style="height: 40px; width: auto;" class="d-inline-block align-text-top ms-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" role="button">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="games.html">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="teams.html">Teams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="players.html">Players</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="games.html">Games</a></li>
-                <li><a href="teams.html">Teams</a></li>
-                <li class="active"><a href="players.html">Players</a></li>
-            </ul>
-            <form class="navbar-form navbar-left" action="/action_page.php">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                    <div class="input-group-btn">
-                        <button class="btn btn-default" type="submit">
-                            <i class="glyphicon glyphicon-search"></i>
-                        </button>
-                    </div>
-                </div>
-            </form>
         </div>
     </nav>
+
+
     <div class="container">
-        <h1>Players</h1>
+        <div class="card card-border m-5">
+            <div class="card-body">
+                <table class="table table-striped table-hover rounded">
+                    <thead>
+                        <tr>
+                            <th>PLAYER</th>
+                            <th>TEAM</th>
+                            <th class="text-end">NUMBER</th>
+                            <th class="text-start">POSITION</th>
+                            <th>HEIGHT</th>
+                            <th>WEIGHT</th>
+                            <th>LAST ATTENDED</th>
+                            <th>COUNTRY</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1630173.avif" class="rounded-circle me-3" width="50" height="40" alt="Precious Achiuwa">
+                                    <a href="" class="link-primary text-decoration-none">Precious Achiuwa</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">SAC</a></td>
+                            <td class="text-end">9</td>
+                            <td class="text-start">F</td>
+                            <td>6-8</td>
+                            <td>243 lbs</td>
+                            <td>Memphis</td>
+                            <td>Nigeria</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/203500.avif" class="rounded-circle me-3" width="50" height="40" alt="Steven Adams">
+                                    <a href="" class="link-primary text-decoration-none">Steven Adams</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">HOU</a></td>
+                            <td class="text-end">12</td>
+                            <td class="text-start">C</td>
+                            <td>6-11</td>
+                            <td>265 lbs</td>
+                            <td>Pittsburgh</td>
+                            <td>New Zealand</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1628389.avif" class="rounded-circle me-3" width="50" height="40" alt="Bam Adebayo">
+                                    <a href="" class="link-primary text-decoration-none">Bam Adebayo</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">MIA</a></td>
+                            <td class="text-end">13</td>
+                            <td class="text-start">C-F</td>
+                            <td>6-9</td>
+                            <td>255 lbs</td>
+                            <td>Kentucky</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1630534.avif" class="rounded-circle me-3" width="50" height="40" alt="Ochai Agbaji">
+                                    <a href="" class="link-primary text-decoration-none">Ochai Agbaji</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">TOR</a></td>
+                            <td class="text-end">30</td>
+                            <td class="text-start">G</td>
+                            <td>6-5</td>
+                            <td>215 lbs</td>
+                            <td>Kansas</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1630583.avif" class="rounded-circle me-3" width="50" height="40" alt="Santi Aldama">
+                                    <a href="" class="link-primary text-decoration-none">Santi Aldama</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">MEM</a></td>
+                            <td class="text-end">7</td>
+                            <td class="text-start">F-C</td>
+                            <td>7-0</td>
+                            <td>215 lbs</td>
+                            <td>Loyola-Maryland</td>
+                            <td>Spain</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1629638.avif" class="rounded-circle me-3" width="50" height="40" alt="Nickeil Alexander-Walker">
+                                    <a href="" class="link-primary text-decoration-none">Nickeil Alexander-Walker</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">ATL</a></td>
+                            <td class="text-end">7</td>
+                            <td class="text-start">G</td>
+                            <td>6-5</td>
+                            <td>205 lbs</td>
+                            <td>Virginia Tech</td>
+                            <td>Canada</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1628960.avif" class="rounded-circle me-3" width="50" height="40" alt="Grayson Allen">
+                                    <a href="" class="link-primary text-decoration-none">Grayson Allen</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">PHX</a></td>
+                            <td class="text-end">8</td>
+                            <td class="text-start">G</td>
+                            <td>6-3</td>
+                            <td>198 lbs</td>
+                            <td>Duke</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1628386.avif" class="rounded-circle me-3" width="50" height="40" alt="Jarrett Allen">
+                                    <a href="" class="link-primary text-decoration-none">Jarrett Allen</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">CLE</a></td>
+                            <td class="text-end">31</td>
+                            <td class="text-start">C</td>
+                            <td>6-9</td>
+                            <td>243 lbs</td>
+                            <td>Texas</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1630631.avif" class="rounded-circle me-3" width="50" height="40" alt="Jose Alvarado">
+                                    <a href="" class="link-primary text-decoration-none">Jose Alvarado</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">NOP</a></td>
+                            <td class="text-end">15</td>
+                            <td class="text-start">G</td>
+                            <td>6-0</td>
+                            <td>179 lbs</td>
+                            <td>Georgia Tech</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/203937.avif" class="rounded-circle me-3" width="50" height="40" alt="Kyle Anderson">
+                                    <a href="" class="link-primary text-decoration-none">Kyle Anderson</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">UTA</a></td>
+                            <td class="text-end">2</td>
+                            <td class="text-start">F-G</td>
+                            <td>6-8</td>
+                            <td>230 lbs</td>
+                            <td>UCLA</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/203507.avif" class="rounded-circle me-3" width="50" height="40" alt="Giannis Antetokounmpo">
+                                    <a href="" class="link-primary text-decoration-none">Giannis Antetokounmpo</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">MIL</a></td>
+                            <td class="text-end">34</td>
+                            <td class="text-start">F</td>
+                            <td>6-11</td>
+                            <td>243 lbs</td>
+                            <td>Filathlitikos</td>
+                            <td>Greece</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1630175.avif" class="rounded-circle me-3" width="50" height="40" alt="Cole Anthony">
+                                    <a href="" class="link-primary text-decoration-none">Cole Anthony</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">MIL</a></td>
+                            <td class="text-end">50</td>
+                            <td class="text-start">G</td>
+                            <td>6-2</td>
+                            <td>185 lbs</td>
+                            <td>North Carolina</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1628384.avif" class="rounded-circle me-3" width="50" height="40" alt="OG Anunoby">
+                                    <a href="" class="link-primary text-decoration-none">OG Anunoby</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">NYK</a></td>
+                            <td class="text-end">8</td>
+                            <td class="text-start">F-G</td>
+                            <td>6-7</td>
+                            <td>240 lbs</td>
+                            <td>Indiana</td>
+                            <td>United Kingdom</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1630166.avif" class="rounded-circle me-3" width="50" height="40" alt="Deni Avdija">
+                                    <a href="" class="link-primary text-decoration-none">Deni Avdija</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">POR</a></td>
+                            <td class="text-end">8</td>
+                            <td class="text-start">F</td>
+                            <td>6-8</td>
+                            <td>228 lbs</td>
+                            <td>Maccabi Tel Aviv</td>
+                            <td>Israel</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1629028.avif" class="rounded-circle me-3" width="50" height="40" alt="Deandre Ayton">
+                                    <a href="" class="link-primary text-decoration-none">Deandre Ayton</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">LAL</a></td>
+                            <td class="text-end">5</td>
+                            <td class="text-start">C</td>
+                            <td>7-0</td>
+                            <td>252 lbs</td>
+                            <td>Arizona</td>
+                            <td>Bahamas</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1628963.avif" class="rounded-circle me-3" width="50" height="40" alt="Marvin Bagley III">
+                                    <a href="" class="link-primary text-decoration-none">Marvin Bagley III</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">WAS</a></td>
+                            <td class="text-end">35</td>
+                            <td class="text-start">F</td>
+                            <td>6-10</td>
+                            <td>235 lbs</td>
+                            <td>Duke</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1630163.avif" class="rounded-circle me-3" width="50" height="40" alt="LaMelo Ball">
+                                    <a href="" class="link-primary text-decoration-none">LaMelo Ball</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">CHA</a></td>
+                            <td class="text-end">1</td>
+                            <td class="text-start">G</td>
+                            <td>6-7</td>
+                            <td>180 lbs</td>
+                            <td>Illawarra</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1628366.avif" class="rounded-circle me-3" width="50" height="40" alt="Lonzo Ball">
+                                    <a href="" class="link-primary text-decoration-none">Lonzo Ball</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">CLE</a></td>
+                            <td class="text-end">2</td>
+                            <td class="text-start">G</td>
+                            <td>6-5</td>
+                            <td>190 lbs</td>
+                            <td>UCLA</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1629056.avif" class="rounded-circle me-3" width="50" height="40" alt="Mo Bamba">
+                                    <a href="" class="link-primary text-decoration-none">Mo Bamba</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">TOR</a></td>
+                            <td class="text-end">4</td>
+                            <td class="text-start">C</td>
+                            <td>7-0</td>
+                            <td>231 lbs</td>
+                            <td>Texas</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1631094.avif" class="rounded-circle me-3" width="50" height="40" alt="Paolo Banchero">
+                                    <a href="" class="link-primary text-decoration-none">Paolo Banchero</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">ORL</a></td>
+                            <td class="text-end">5</td>
+                            <td class="text-start">F</td>
+                            <td>6-10</td>
+                            <td>250 lbs</td>
+                            <td>Duke</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1630217.avif" class="rounded-circle me-3" width="50" height="40" alt="Desmond Bane">
+                                    <a href="" class="link-primary text-decoration-none">Desmond Bane</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">ORL</a></td>
+                            <td class="text-end">3</td>
+                            <td class="text-start">G</td>
+                            <td>6-6</td>
+                            <td>215 lbs</td>
+                            <td>TCU</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/203084.avif" class="rounded-circle me-3" width="50" height="40" alt="Harrison Barnes">
+                                    <a href="" class="link-primary text-decoration-none">Harrison Barnes</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">SAS</a></td>
+                            <td class="text-end">40</td>
+                            <td class="text-start">F</td>
+                            <td>6-7</td>
+                            <td>225 lbs</td>
+                            <td>North Carolina</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1630567.avif" class="rounded-circle me-3" width="50" height="40" alt="Scottie Barnes">
+                                    <a href="" class="link-primary text-decoration-none">Scottie Barnes</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">TOR</a></td>
+                            <td class="text-end">4</td>
+                            <td class="text-start">F-G</td>
+                            <td>6-8</td>
+                            <td>237 lbs</td>
+                            <td>Florida State</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1629628.avif" class="rounded-circle me-3" width="50" height="40" alt="RJ Barrett">
+                                    <a href="" class="link-primary text-decoration-none">RJ Barrett</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">TOR</a></td>
+                            <td class="text-end">9</td>
+                            <td class="text-start">F-G</td>
+                            <td>6-6</td>
+                            <td>214 lbs</td>
+                            <td>Duke</td>
+                            <td>Canada</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/201587.avif" class="rounded-circle me-3" width="50" height="40" alt="Nicolas Batum">
+                                    <a href="" class="link-primary text-decoration-none">Nicolas Batum</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">LAC</a></td>
+                            <td class="text-end">33</td>
+                            <td class="text-start">G-F</td>
+                            <td>6-7</td>
+                            <td>230 lbs</td>
+                            <td>Le Mans</td>
+                            <td>France</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/203078.avif" class="rounded-circle me-3" width="50" height="40" alt="Bradley Beal">
+                                    <a href="" class="link-primary text-decoration-none">Bradley Beal</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">LAC</a></td>
+                            <td class="text-end">0</td>
+                            <td class="text-start">G</td>
+                            <td>6-4</td>
+                            <td>207 lbs</td>
+                            <td>Florida</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1630180.avif" class="rounded-circle me-3" width="50" height="40" alt="Saddiq Bey">
+                                    <a href="" class="link-primary text-decoration-none">Saddiq Bey</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">NOP</a></td>
+                            <td class="text-end">41</td>
+                            <td class="text-start">G-F</td>
+                            <td>6-8</td>
+                            <td>215 lbs</td>
+                            <td>Villanova</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1629048.avif" class="rounded-circle me-3" width="50" height="40" alt="Goga Bitadze">
+                                    <a href="" class="link-primary text-decoration-none">Goga Bitadze</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">ORL</a></td>
+                            <td class="text-end">35</td>
+                            <td class="text-start">C-F</td>
+                            <td>6-11</td>
+                            <td>250 lbs</td>
+                            <td>Mega Basket</td>
+                            <td>Georgia</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1641710.avif" class="rounded-circle me-3" width="50" height="40" alt="Anthony Black">
+                                    <a href="" class="link-primary text-decoration-none">Anthony Black</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">ORL</a></td>
+                            <td class="text-end">0</td>
+                            <td class="text-start">G</td>
+                            <td>6-7</td>
+                            <td>200 lbs</td>
+                            <td>Arkansas</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/203992.avif" class="rounded-circle me-3" width="50" height="40" alt="Bogdan Bogdanović">
+                                    <a href="" class="link-primary text-decoration-none">Bogdan Bogdanović</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">LAC</a></td>
+                            <td class="text-end">10</td>
+                            <td class="text-start">G</td>
+                            <td>6-5</td>
+                            <td>225 lbs</td>
+                            <td>Fenerbahce</td>
+                            <td>Serbia</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1626164.avif" class="rounded-circle me-3" width="50" height="40" alt="Devin Booker">
+                                    <a href="" class="link-primary text-decoration-none">Devin Booker</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">PHX</a></td>
+                            <td class="text-end">1</td>
+                            <td class="text-start">G</td>
+                            <td>6-5</td>
+                            <td>206 lbs</td>
+                            <td>Kentucky</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="players/1631128.avif" class="rounded-circle me-3" width="50" height="40" alt="Christian Braun">
+                                    <a href="" class="link-primary text-decoration-none">Christian Braun</a>
+                                </div>
+                            </td>
+                            <td><a href="" class="link-primary text-decoration-none">DEN</a></td>
+                            <td class="text-end">0</td>
+                            <td class="text-start">G</td>
+                            <td>6-6</td>
+                            <td>220 lbs</td>
+                            <td>Kansas</td>
+                            <td>USA</td>
+                        </tr></tbody>
+                </table>
+            </div>
+        </div>
     </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>

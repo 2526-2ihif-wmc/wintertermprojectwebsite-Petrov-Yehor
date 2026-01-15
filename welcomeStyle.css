@@ -1,0 +1,56 @@
+body {
+    background-color: #d2d2d2; 
+    margin: 0;
+    padding: 0;
+}
+
+.wiki-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px 40px;
+    min-height: calc(100vh - 56px); 
+}
+
+.sidebar-box {
+    background-color: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.inner-sidebar-box{
+    padding: 5px;
+    padding-bottom: 0;
+}
+
+.rotating-ball {
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.list-image {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-image li {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.list-image li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    background-image: url("dataImage/—Pngtree—fireball basketball_8801919.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
